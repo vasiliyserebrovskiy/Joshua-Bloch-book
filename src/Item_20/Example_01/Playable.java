@@ -1,4 +1,4 @@
-package Item_20;
+package Item_20.Example_01;
 
 // Interface - contract
 public interface Playable {
