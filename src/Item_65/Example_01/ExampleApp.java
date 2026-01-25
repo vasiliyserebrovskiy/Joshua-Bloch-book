@@ -15,9 +15,11 @@ import java.util.Set;
 
 public class ExampleApp {
     // Reflective instantiation with interface access
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         // Translate the class name into a Class object
         Class<? extends Set<String>> cl = null;
+
         try {
             cl = (Class<? extends Set<String>>) // Unchecked cast!
                     Class.forName(args[0]);
